@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Multimedia y Formularios</title>
+    <link rel="stylesheet" href="statics/styles.css">
+    <script src="js/script_bienvenida.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <h1>Proyecto de Formularios y Multimedia</h1>
+    <p class="descripcion">Explora los contenidos: mapas, videos, audios y menús interactivos.</p>
+</header>
+
+<div class="welcome-box">
+    <p id="mensaje-bienvenida"></p>
+</div>
+
+<nav class="menu-principal">
+
+    <!-- BOTÓN DESPLEGABLE 1 -->
+    <div class="dropdown">
+        <button class="btn">Multimedia</button>
+        <div class="dropdown-content">
+            <a href="templates/multimedia1.html">Multimedia 1</a>
+            <a href="templates/multimedia2.html">Multimedia 2</a>
+            <a href="templates/multimedia3.html">Multimedia 3</a>
+        </div>
+    </div>
+
+    <!-- BOTÓN DESPLEGABLE 2 -->
+    <div class="dropdown">
+        <button class="btn">Menús</button>
+        <div class="dropdown-content">
+            <a href="templates/menu1.html">Menú 1</a>
+            <a href="templates/menu2.html">Menú 2</a>
+            <a href="templates/menu3.html">Menú 3</a>
+        </div>
+    </div>
+
+    <!-- BOTÓN INICIO -->
+    <a href="../index.html" class="btn inicio-btn">Inicio</a>
+
+</nav>
+
+<p class="nombre-usuario">Bienvenido: <span id="nombreUsuario"></span></p>
+
+</body>
+</html>
