@@ -2,21 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia 2 - Videos YouTube</title>
-    <link rel="stylesheet" href="../statics/styles.css">
+    <link rel="stylesheet" href="/statics/styles.css">
 </head>
+<body class="bg-multimedia2">
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">🎬 Proyecto Multimedia</h1>
+            <div class="nav-buttons">
+                 <a href="../index.html" class="btn btn-home">🏠 Inicio</a>
+                
+                <div class="dropdown">
+                    <button class="btn btn-multimedia dropdown-btn">🎥 Multimedia ▼</button>
+                    <div class="dropdown-content">
+                         <a href="/templates/multimedia1.html">📍 Multimedia 1</a>
+                        <a href="/templates/multimedia2.html">📺 Multimedia 2</a>
+                        <a href="/templates/multimedia3.html">🔊 Multimedia 3</a>
+                    </div>
+                </div>
 
-<body>
+                <div class="dropdown">
+                    <button class="btn btn-menu dropdown-btn">📋 Menús ▼</button>
+                    <div class="dropdown-content">
+                       <a href="/templates/menu1.html">Menu 1</a>
+                        <a href="/templates/menu2.html">Menu 2</a>
+                        <a href="/templates/menu3.html">Menu 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<h2 style="text-align:center; color:white;">Multimedia 2 - Videos de YouTube</h2>
+    <div class="container">
+        <h2 class="page-title animate-slideDown">📺 Videos de YouTube</h2>
+        
+        <div class="grid-3">
+            <div class="video-card animate-fadeIn" style="animation-delay: 0s;">
+                <div class="card-header bg-red">
+                    <h3>Video 1</h3>
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
 
-<div style="text-align:center;">
-    <iframe width="350" height="220" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-    <iframe width="350" height="220" src="https://www.youtube.com/embed/ysz5S6PUM-U"></iframe>
-    <iframe width="350" height="220" src="https://www.youtube.com/embed/ScMzIvxBSi4"></iframe>
-</div>
+            <div class="video-card animate-fadeIn" style="animation-delay: 0.2s;">
+                <div class="card-header bg-red">
+                    <h3>Video 2</h3>
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/jNQXAC9IVRw"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
 
-<br><center><a href="../index.html" class="btn">Volver</a></center>
+            <div class="video-card animate-fadeIn" style="animation-delay: 0.4s;">
+                <div class="card-header bg-red">
+                    <h3>Video 3</h3>
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/9bZkp7q19f0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="/js/script_bienvenida.js"></script>
 </body>
 </html>

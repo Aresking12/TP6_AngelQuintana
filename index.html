@@ -3,49 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Multimedia y Formularios</title>
-    <link rel="stylesheet" href="statics/styles.css">
-    <script src="js/script_bienvenida.js" defer></script>
+    <title>Proyecto Multimedia - Inicio</title>
+    <link rel="stylesheet" href="/statics/styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">🎬 Proyecto Multimedia</h1>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Inicio</a>
+                
+                <div class="dropdown">
+                    <button class="btn btn-multimedia dropdown-btn">🎥 Multimedia ▼</button>
+                    <div class="dropdown-content">
+                        <a href="/templates/multimedia1.html">📍 Multimedia 1</a>
+                        <a href="/templates/multimedia2.html">📺 Multimedia 2</a>
+                        <a href="/templates/multimedia3.html">🔊 Multimedia 3</a>
+                    </div>
+                </div>
 
-<header class="header">
-    <h1>Proyecto de Formularios y Multimedia</h1>
-    <p class="descripcion">Explora los contenidos: mapas, videos, audios y menús interactivos.</p>
-</header>
+                <div class="dropdown">
+                    <button class="btn btn-menu dropdown-btn">📋 Menús ▼</button>
+                    <div class="dropdown-content">
+                        <a href="/templates/menu1.html">Menu 1</a>
+                        <a href="/templates/menu2.html">Menu 2</a>
+                        <a href="/templates/menu3.html">Menu 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<div class="welcome-box">
-    <p id="mensaje-bienvenida"></p>
-</div>
+    <div class="container">
+        <div class="welcome-card animate-slideDown">
+            <h2 class="page-title">¡Bienvenido a nuestro Proyecto Multimedia!</h2>
+            <p class="page-description">Explora contenido multimedia interactivo con mapas, videos y audio</p>
+        </div>
 
-<nav class="menu-principal">
+        <div id="form-container" class="form-card animate-fadeIn">
+            <h3 class="form-title">Por favor, ingresa tus datos</h3>
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" class="form-input">
+            </div>
+            <div class="form-group">
+                <label>Apellido:</label>
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido" class="form-input">
+            </div>
+            <button onclick="submitForm()" class="btn-submit">Ingresar</button>
+        </div>
 
-    <!-- BOTÓN DESPLEGABLE 1 -->
-    <div class="dropdown">
-        <button class="btn">Multimedia</button>
-        <div class="dropdown-content">
-            <a href="templates/multimedia1.html">Multimedia 1</a>
-            <a href="templates/multimedia2.html">Multimedia 2</a>
-            <a href="templates/multimedia3.html">Multimedia 3</a>
+        <div id="welcome-message" class="welcome-message" style="display: none;">
+            <h3 class="welcome-text">¡Bienvenido/a, <span id="user-name"></span>!</h3>
+            <p class="welcome-subtitle">Disfruta explorando nuestro contenido multimedia</p>
+            <div class="user-info">
+                Usuario activo: <span id="user-display"></span>
+            </div>
         </div>
     </div>
 
-    <!-- BOTÓN DESPLEGABLE 2 -->
-    <div class="dropdown">
-        <button class="btn">Menús</button>
-        <div class="dropdown-content">
-            <a href="templates/menu1.html">Menú 1</a>
-            <a href="templates/menu2.html">Menú 2</a>
-            <a href="templates/menu3.html">Menú 3</a>
-        </div>
-    </div>
-
-    <!-- BOTÓN INICIO -->
-    <a href="../index.html" class="btn inicio-btn">Inicio</a>
-
-</nav>
-
-<p class="nombre-usuario">Bienvenido: <span id="nombreUsuario"></span></p>
-
+    <script src="/js/script_bienvenida.js"></script>
 </body>
 </html>

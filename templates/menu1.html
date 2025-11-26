@@ -2,22 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menú 1</title>
-    <link rel="stylesheet" href="../statics/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1 - Glassmorphism</title>
+    <link rel="stylesheet" href="/statics/styles.css">
 </head>
+<body class="bg-menu1">
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">🎬 Proyecto Multimedia</h1>
+            <div class="nav-buttons">
+                 <a href="../index.html" class="btn btn-home">🏠 Inicio</a>
+                
+                <div class="dropdown">
+                    <button class="btn btn-multimedia dropdown-btn">🎥 Multimedia ▼</button>
+                    <div class="dropdown-content">
+                     <a href="/templates/multimedia1.html">📍 Multimedia 1</a>
+                        <a href="/templates/multimedia2.html">📺 Multimedia 2</a>
+                        <a href="/templates/multimedia3.html">🔊 Multimedia 3</a>
+                    </div>
+                </div>
 
-<body>
+                <div class="dropdown">
+                    <button class="btn btn-menu dropdown-btn">📋 Menús ▼</button>
+                    <div class="dropdown-content">
+                        <a href="/templates/menu1.html">Menu 1</a>
+                        <a href="/templates/menu2.html">Menu 2</a>
+                        <a href="/templates/menu3.html">Menu 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<h2 style="text-align:center; color:white;">Menú 1 - Vertical</h2>
+    <div class="container">
+        <div class="glass-container animate-fadeIn">
+            <h2 class="glass-title">Menú Estilo Glassmorphism</h2>
+            
+            <div class="glass-menu">
+                <div class="glass-item animate-slideRight" style="animation-delay: 0s;">
+                    <h3>Opción 1</h3>
+                    <p>Descripción de la opción 1</p>
+                </div>
+                
+                <div class="glass-item animate-slideRight" style="animation-delay: 0.1s;">
+                    <h3>Opción 2</h3>
+                    <p>Descripción de la opción 2</p>
+                </div>
+                
+                <div class="glass-item animate-slideRight" style="animation-delay: 0.2s;">
+                    <h3>Opción 3</h3>
+                    <p>Descripción de la opción 3</p>
+                </div>
+                
+                <div class="glass-item animate-slideRight" style="animation-delay: 0.3s;">
+                    <h3>Opción 4</h3>
+                    <p>Descripción de la opción 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<ul style="background:white; width:200px; margin:auto; padding:20px; border-radius:10px;">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Acerca de</a></li>
-    <li><a href="#">Galería</a></li>
-    <li><a href="#">Contacto</a></li>
-</ul>
-
-<br><center><a href="../index.html" class="btn">Volver</a></center>
-
+    <script src="/js/script_bienvenida.js"></script>
 </body>
 </html>
